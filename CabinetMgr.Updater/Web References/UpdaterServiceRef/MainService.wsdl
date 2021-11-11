@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://jhy.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://jhy.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://jhy.org/">
+      <s:element name="GetAllUnit">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAllUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAllUnitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailableUnitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppByUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppByUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppByUnitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableAppByUnit">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="author" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAvailableAppByUnitResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAvailableAppByUnitResult">
+              <s:complexType>
+                <s:sequence>
+                  <s:element ref="s:schema" />
+                  <s:any />
+                </s:sequence>
+              </s:complexType>
+            </s:element>
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerVersion">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetServerVersionResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetServerVersionResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileUpdList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetFileUpdListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetFileUpdListResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReqFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReqType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReqFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReqFileResult" type="s:base64Binary" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReqFileUrl">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="ReqType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="FileName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ReqFileUrlResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ReqFileUrlResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAppFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelAppFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="DelAppFileResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddApp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddAppResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddAppResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenUpdateInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="AppName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="Unit" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="NewVer" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UpdLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GenUpdateInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="GenUpdateInfoResult" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAllUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAllUnit" />
+  </wsdl:message>
+  <wsdl:message name="GetAllUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAllUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailableUnit" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailableUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppByUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppByUnit" />
+  </wsdl:message>
+  <wsdl:message name="GetAppByUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppByUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableAppByUnitSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAvailableAppByUnit" />
+  </wsdl:message>
+  <wsdl:message name="GetAvailableAppByUnitSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAvailableAppByUnitResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetServerVersionSoapIn">
+    <wsdl:part name="parameters" element="tns:GetServerVersion" />
+  </wsdl:message>
+  <wsdl:message name="GetServerVersionSoapOut">
+    <wsdl:part name="parameters" element="tns:GetServerVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetFileUpdListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetFileUpdList" />
+  </wsdl:message>
+  <wsdl:message name="GetFileUpdListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetFileUpdListResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReqFileSoapIn">
+    <wsdl:part name="parameters" element="tns:ReqFile" />
+  </wsdl:message>
+  <wsdl:message name="ReqFileSoapOut">
+    <wsdl:part name="parameters" element="tns:ReqFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="ReqFileUrlSoapIn">
+    <wsdl:part name="parameters" element="tns:ReqFileUrl" />
+  </wsdl:message>
+  <wsdl:message name="ReqFileUrlSoapOut">
+    <wsdl:part name="parameters" element="tns:ReqFileUrlResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelAppFileSoapIn">
+    <wsdl:part name="parameters" element="tns:DelAppFile" />
+  </wsdl:message>
+  <wsdl:message name="DelAppFileSoapOut">
+    <wsdl:part name="parameters" element="tns:DelAppFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddAppSoapIn">
+    <wsdl:part name="parameters" element="tns:AddApp" />
+  </wsdl:message>
+  <wsdl:message name="AddAppSoapOut">
+    <wsdl:part name="parameters" element="tns:AddAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="GenUpdateInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GenUpdateInfo" />
+  </wsdl:message>
+  <wsdl:message name="GenUpdateInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GenUpdateInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="MainServiceSoap">
+    <wsdl:operation name="GetAllUnit">
+      <wsdl:input message="tns:GetAllUnitSoapIn" />
+      <wsdl:output message="tns:GetAllUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableUnit">
+      <wsdl:input message="tns:GetAvailableUnitSoapIn" />
+      <wsdl:output message="tns:GetAvailableUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppByUnit">
+      <wsdl:input message="tns:GetAppByUnitSoapIn" />
+      <wsdl:output message="tns:GetAppByUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppByUnit">
+      <wsdl:input message="tns:GetAvailableAppByUnitSoapIn" />
+      <wsdl:output message="tns:GetAvailableAppByUnitSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServerVersion">
+      <wsdl:input message="tns:GetServerVersionSoapIn" />
+      <wsdl:output message="tns:GetServerVersionSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUpdList">
+      <wsdl:input message="tns:GetFileUpdListSoapIn" />
+      <wsdl:output message="tns:GetFileUpdListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReqFile">
+      <wsdl:input message="tns:ReqFileSoapIn" />
+      <wsdl:output message="tns:ReqFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ReqFileUrl">
+      <wsdl:input message="tns:ReqFileUrlSoapIn" />
+      <wsdl:output message="tns:ReqFileUrlSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelAppFile">
+      <wsdl:input message="tns:DelAppFileSoapIn" />
+      <wsdl:output message="tns:DelAppFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddApp">
+      <wsdl:input message="tns:AddAppSoapIn" />
+      <wsdl:output message="tns:AddAppSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GenUpdateInfo">
+      <wsdl:input message="tns:GenUpdateInfoSoapIn" />
+      <wsdl:output message="tns:GenUpdateInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="MainServiceSoap" type="tns:MainServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllUnit">
+      <soap:operation soapAction="http://jhy.org/GetAllUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableUnit">
+      <soap:operation soapAction="http://jhy.org/GetAvailableUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppByUnit">
+      <soap:operation soapAction="http://jhy.org/GetAppByUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppByUnit">
+      <soap:operation soapAction="http://jhy.org/GetAvailableAppByUnit" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerVersion">
+      <soap:operation soapAction="http://jhy.org/GetServerVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUpdList">
+      <soap:operation soapAction="http://jhy.org/GetFileUpdList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReqFile">
+      <soap:operation soapAction="http://jhy.org/ReqFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReqFileUrl">
+      <soap:operation soapAction="http://jhy.org/ReqFileUrl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAppFile">
+      <soap:operation soapAction="http://jhy.org/DelAppFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddApp">
+      <soap:operation soapAction="http://jhy.org/AddApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenUpdateInfo">
+      <soap:operation soapAction="http://jhy.org/GenUpdateInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="MainServiceSoap12" type="tns:MainServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAllUnit">
+      <soap12:operation soapAction="http://jhy.org/GetAllUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableUnit">
+      <soap12:operation soapAction="http://jhy.org/GetAvailableUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppByUnit">
+      <soap12:operation soapAction="http://jhy.org/GetAppByUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAvailableAppByUnit">
+      <soap12:operation soapAction="http://jhy.org/GetAvailableAppByUnit" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServerVersion">
+      <soap12:operation soapAction="http://jhy.org/GetServerVersion" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetFileUpdList">
+      <soap12:operation soapAction="http://jhy.org/GetFileUpdList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReqFile">
+      <soap12:operation soapAction="http://jhy.org/ReqFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ReqFileUrl">
+      <soap12:operation soapAction="http://jhy.org/ReqFileUrl" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelAppFile">
+      <soap12:operation soapAction="http://jhy.org/DelAppFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddApp">
+      <soap12:operation soapAction="http://jhy.org/AddApp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GenUpdateInfo">
+      <soap12:operation soapAction="http://jhy.org/GenUpdateInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="MainService">
+    <wsdl:port name="MainServiceSoap" binding="tns:MainServiceSoap">
+      <soap:address location="http://10.128.177.61:8080/UpdateService/MainService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="MainServiceSoap12" binding="tns:MainServiceSoap12">
+      <soap12:address location="http://10.128.177.61:8080/UpdateService/MainService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,1617 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://tempuri.org/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://tempuri.org/">
+      <s:element name="HelloWorld">
+        <s:complexType />
+      </s:element>
+      <s:element name="HelloWorldResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="HelloWorldResult" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWrenchInfoTEMP">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="chehao" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="bujian" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="WrenchNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JobResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strtTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DefinitionId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RepairPairId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWrenchInfoTEMPResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddWrenchInfoTEMPResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWrenchInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WrenchNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JobResult" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strtTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RepairPairId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingstepId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddWrenchInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddWrenchInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddQianfenchiInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreatUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QianfenchiID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QianfenchiNum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strtTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RepairPairId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingstepId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JobResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="AddQianfenchiInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="AddQianfenchiInfoResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuantityCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WrenchNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueValue" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="TorqueJob" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="UserId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="JobResult" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="CreatUser" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QianfenchiID" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="QianfenchiNum" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="type" type="s:int" />
+            <s:element minOccurs="1" maxOccurs="1" name="QuantityCodeType" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="QuantityCodeId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="strtTime" type="s:dateTime" />
+            <s:element minOccurs="1" maxOccurs="1" name="endTime" type="s:dateTime" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="RepairPairId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="workingstepId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="QuantityCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="QuantityCodeResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWrenchInfoListData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="deviceCode" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="trainNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="deviceType" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="artificialId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="process" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWrenchInfoListDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWrenchInfoListDataResult" type="tns:ArrayOfWrenchInfoEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWrenchInfoEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WrenchInfoEntity" nillable="true" type="tns:WrenchInfoEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WrenchInfoEntity">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseEntity">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WrenchNum" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="TorqueValue" nillable="true" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="TorqueJob" nillable="true" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="JobTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatUser" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="JobResult" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="EndTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefinitionId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QianfenchiID" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="QianfenchiNum" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="QianfenchiTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="type" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="DeviceNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TrainType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TrainNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkNode" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="workingstepId" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="QuantityCodeType" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="QuantityCodeId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="JianXiuCount" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefinitionName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreatUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PartId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PartName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Proces" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TemplateName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Value" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="startDateTime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="endDateTime" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultValue" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="drpProcess" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TorqueValueStr" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="JobResultStr" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Specification" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ArtificialId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProcessImage" type="s:base64Binary" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="BaseEntity" abstract="true" />
+      <s:element name="SearchPartNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SearchPartNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="SearchPartNumResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WritePartNum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartNum" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="PartName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="XC" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="WritePartNumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="1" maxOccurs="1" name="WritePartNumResult" type="s:boolean" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkingWrenchInfoListByStepId">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="StepId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkingWrenchInfoListByStepIdResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkingWrenchInfoListByStepIdResult" type="tns:ArrayOfWrenchInfoEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWrenchInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WrenchModel" type="tns:WrenchInfoEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWrenchInfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="DelWrenchInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="WrenchModel" type="tns:WrenchInfoEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DelWrenchInfoResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetWorkingProcessListByDeviceCode">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="code" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetWorkingProcessListByDeviceCodeResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetWorkingProcessListByDeviceCodeResult" type="tns:ArrayOfWorkingProcessEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfWorkingProcessEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WorkingProcessEntity" nillable="true" type="tns:WorkingProcessEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WorkingProcessEntity">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseEntity">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="workingStepList" type="tns:ArrayOfWorkingStepEntity" />
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="RepairId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingPeopleId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingPeople" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingDete" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreateDate" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreateUser" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ArrayOfWorkingStepEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="WorkingStepEntity" nillable="true" type="tns:WorkingStepEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="WorkingStepEntity">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseEntity">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="WorkingId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProcessTemplateId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefinitionId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StepName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StepPeopleId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="StepPeopleName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateDate" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="Sequence" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultValue" nillable="true" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="Specification" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProcessImage" type="s:base64Binary" />
+              <s:element minOccurs="0" maxOccurs="1" name="SpecificationImage" type="s:base64Binary" />
+              <s:element minOccurs="0" maxOccurs="1" name="processDefinitionEntity" type="tns:ProcessDefinitionEntity" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultCount" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="bsHao" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ljName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ljMonad" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="BsType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Max" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Min" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:complexType name="ProcessDefinitionEntity">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseEntity">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TemplateId" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ApprovalType" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Sequence" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="FullName" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="State" nillable="true" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreateUser" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdateUser" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="UpdateTime" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultValue" nillable="true" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="DefaultCount" nillable="true" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Provision" nillable="true" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="Standard" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Usefulness" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Long" nillable="true" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="Width" nillable="true" type="s:float" />
+              <s:element minOccurs="1" maxOccurs="1" name="Height" nillable="true" type="s:float" />
+              <s:element minOccurs="0" maxOccurs="1" name="Remark" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImageX" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="ImageY" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="SelfPosition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="FromPosition" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Specification" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ArtificialId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ProcessImage" type="s:base64Binary" />
+              <s:element minOccurs="0" maxOccurs="1" name="SpecificationImage" type="s:base64Binary" />
+              <s:element minOccurs="0" maxOccurs="1" name="Min" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="Max" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="NumberType" type="s:int" />
+              <s:element minOccurs="1" maxOccurs="1" name="Type" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreateUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="UpdateUserName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="ImageMasterId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DefaultCountStr" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ListCodeData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListCodeDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListCodeDataResult" type="tns:ArrayOfRepairProcessEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfRepairProcessEntity">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="RepairProcessEntity" nillable="true" type="tns:RepairProcessEntity" />
+        </s:sequence>
+      </s:complexType>
+      <s:complexType name="RepairProcessEntity">
+        <s:complexContent mixed="false">
+          <s:extension base="tns:BaseEntity">
+            <s:sequence>
+              <s:element minOccurs="0" maxOccurs="1" name="Id" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PartsId" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PartsName" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="PartsType" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="RepairDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="Proces" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="Status" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="CreateUser" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="CreateDate" nillable="true" type="s:dateTime" />
+              <s:element minOccurs="0" maxOccurs="1" name="TrainNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="TrainType" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="LevelNum" type="s:string" />
+              <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+              <s:element minOccurs="1" maxOccurs="1" name="JianXiuCount" type="s:int" />
+              <s:element minOccurs="0" maxOccurs="1" name="JianXiuStatus" type="s:string" />
+            </s:sequence>
+          </s:extension>
+        </s:complexContent>
+      </s:complexType>
+      <s:element name="ListRepairProcessData">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartsId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ListRepairProcessDataResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ListRepairProcessDataResult" type="tns:ArrayOfRepairProcessEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWorkingStep">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="stepid" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+            <s:element minOccurs="0" maxOccurs="1" name="userid" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="username" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateWorkingStepResponse">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetProcessList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PartsId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="DataType" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetProcessListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetProcessListResult" type="tns:ArrayOfRepairProcessEntity" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="string" nillable="true" type="s:string" />
+      <s:element name="boolean" type="s:boolean" />
+      <s:element name="ArrayOfWrenchInfoEntity" nillable="true" type="tns:ArrayOfWrenchInfoEntity" />
+      <s:element name="ArrayOfWorkingProcessEntity" nillable="true" type="tns:ArrayOfWorkingProcessEntity" />
+      <s:element name="ArrayOfRepairProcessEntity" nillable="true" type="tns:ArrayOfRepairProcessEntity" />
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="HelloWorldSoapIn">
+    <wsdl:part name="parameters" element="tns:HelloWorld" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldSoapOut">
+    <wsdl:part name="parameters" element="tns:HelloWorldResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWrenchInfoTEMP" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWrenchInfoTEMPResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddWrenchInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddWrenchInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:AddQianfenchiInfo" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:AddQianfenchiInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:QuantityCode" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:QuantityCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWrenchInfoListData" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWrenchInfoListDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumSoapIn">
+    <wsdl:part name="parameters" element="tns:SearchPartNum" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumSoapOut">
+    <wsdl:part name="parameters" element="tns:SearchPartNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumSoapIn">
+    <wsdl:part name="parameters" element="tns:WritePartNum" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumSoapOut">
+    <wsdl:part name="parameters" element="tns:WritePartNumResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkingWrenchInfoListByStepId" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkingWrenchInfoListByStepIdResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWrenchInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWrenchInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWrenchInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWrenchInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DelWrenchInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DelWrenchInfo" />
+  </wsdl:message>
+  <wsdl:message name="DelWrenchInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DelWrenchInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeSoapIn">
+    <wsdl:part name="parameters" element="tns:GetWorkingProcessListByDeviceCode" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeSoapOut">
+    <wsdl:part name="parameters" element="tns:GetWorkingProcessListByDeviceCodeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ListCodeData" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ListCodeDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataSoapIn">
+    <wsdl:part name="parameters" element="tns:ListRepairProcessData" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataSoapOut">
+    <wsdl:part name="parameters" element="tns:ListRepairProcessDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingStep" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateWorkingStepResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetProcessList" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetProcessListResponse" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpGetIn" />
+  <wsdl:message name="HelloWorldHttpGetOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPHttpGetIn">
+    <wsdl:part name="chehao" type="s:string" />
+    <wsdl:part name="bujian" type="s:string" />
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="DefinitionId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoHttpGetIn">
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoHttpGetIn">
+    <wsdl:part name="CreatUser" type="s:string" />
+    <wsdl:part name="QianfenchiID" type="s:string" />
+    <wsdl:part name="QianfenchiNum" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeHttpGetIn">
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="CreatUser" type="s:string" />
+    <wsdl:part name="QianfenchiID" type="s:string" />
+    <wsdl:part name="QianfenchiNum" type="s:string" />
+    <wsdl:part name="type" type="s:string" />
+    <wsdl:part name="QuantityCodeType" type="s:string" />
+    <wsdl:part name="QuantityCodeId" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataHttpGetIn">
+    <wsdl:part name="deviceCode" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+    <wsdl:part name="artificialId" type="s:string" />
+    <wsdl:part name="process" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWrenchInfoEntity" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumHttpGetIn">
+    <wsdl:part name="PartNum" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumHttpGetIn">
+    <wsdl:part name="PartNum" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="XC" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumHttpGetOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdHttpGetIn">
+    <wsdl:part name="StepId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWrenchInfoEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeHttpGetIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWorkingProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataHttpGetIn">
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataHttpGetIn">
+    <wsdl:part name="PartsId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepHttpGetIn">
+    <wsdl:part name="stepid" type="s:string" />
+    <wsdl:part name="status" type="s:string" />
+    <wsdl:part name="userid" type="s:string" />
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepHttpGetOut" />
+  <wsdl:message name="GetProcessListHttpGetIn">
+    <wsdl:part name="PartsId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessListHttpGetOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="HelloWorldHttpPostIn" />
+  <wsdl:message name="HelloWorldHttpPostOut">
+    <wsdl:part name="Body" element="tns:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPHttpPostIn">
+    <wsdl:part name="chehao" type="s:string" />
+    <wsdl:part name="bujian" type="s:string" />
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="DefinitionId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoTEMPHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoHttpPostIn">
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddWrenchInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoHttpPostIn">
+    <wsdl:part name="CreatUser" type="s:string" />
+    <wsdl:part name="QianfenchiID" type="s:string" />
+    <wsdl:part name="QianfenchiNum" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="AddQianfenchiInfoHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeHttpPostIn">
+    <wsdl:part name="WrenchNum" type="s:string" />
+    <wsdl:part name="TorqueValue" type="s:string" />
+    <wsdl:part name="TorqueJob" type="s:string" />
+    <wsdl:part name="UserId" type="s:string" />
+    <wsdl:part name="JobResult" type="s:string" />
+    <wsdl:part name="CreatUser" type="s:string" />
+    <wsdl:part name="QianfenchiID" type="s:string" />
+    <wsdl:part name="QianfenchiNum" type="s:string" />
+    <wsdl:part name="type" type="s:string" />
+    <wsdl:part name="QuantityCodeType" type="s:string" />
+    <wsdl:part name="QuantityCodeId" type="s:string" />
+    <wsdl:part name="strtTime" type="s:string" />
+    <wsdl:part name="endTime" type="s:string" />
+    <wsdl:part name="deviceNum" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="workingId" type="s:string" />
+    <wsdl:part name="RepairPairId" type="s:string" />
+    <wsdl:part name="workingstepId" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="QuantityCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataHttpPostIn">
+    <wsdl:part name="deviceCode" type="s:string" />
+    <wsdl:part name="trainType" type="s:string" />
+    <wsdl:part name="trainNum" type="s:string" />
+    <wsdl:part name="deviceType" type="s:string" />
+    <wsdl:part name="artificialId" type="s:string" />
+    <wsdl:part name="process" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWrenchInfoListDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWrenchInfoEntity" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumHttpPostIn">
+    <wsdl:part name="PartNum" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="SearchPartNumHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumHttpPostIn">
+    <wsdl:part name="PartNum" type="s:string" />
+    <wsdl:part name="PartName" type="s:string" />
+    <wsdl:part name="XC" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="WritePartNumHttpPostOut">
+    <wsdl:part name="Body" element="tns:boolean" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdHttpPostIn">
+    <wsdl:part name="StepId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingWrenchInfoListByStepIdHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWrenchInfoEntity" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeHttpPostIn">
+    <wsdl:part name="code" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetWorkingProcessListByDeviceCodeHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfWorkingProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataHttpPostIn">
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListCodeDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataHttpPostIn">
+    <wsdl:part name="PartsId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="ListRepairProcessDataHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepHttpPostIn">
+    <wsdl:part name="stepid" type="s:string" />
+    <wsdl:part name="status" type="s:string" />
+    <wsdl:part name="userid" type="s:string" />
+    <wsdl:part name="username" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="UpdateWorkingStepHttpPostOut" />
+  <wsdl:message name="GetProcessListHttpPostIn">
+    <wsdl:part name="PartsId" type="s:string" />
+    <wsdl:part name="DataType" type="s:string" />
+  </wsdl:message>
+  <wsdl:message name="GetProcessListHttpPostOut">
+    <wsdl:part name="Body" element="tns:ArrayOfRepairProcessEntity" />
+  </wsdl:message>
+  <wsdl:portType name="RepairServiceSoap">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldSoapIn" />
+      <wsdl:output message="tns:HelloWorldSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <wsdl:input message="tns:AddWrenchInfoTEMPSoapIn" />
+      <wsdl:output message="tns:AddWrenchInfoTEMPSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <wsdl:input message="tns:AddWrenchInfoSoapIn" />
+      <wsdl:output message="tns:AddWrenchInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <wsdl:input message="tns:AddQianfenchiInfoSoapIn" />
+      <wsdl:output message="tns:AddQianfenchiInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <wsdl:input message="tns:QuantityCodeSoapIn" />
+      <wsdl:output message="tns:QuantityCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <wsdl:input message="tns:GetWrenchInfoListDataSoapIn" />
+      <wsdl:output message="tns:GetWrenchInfoListDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <wsdl:input message="tns:SearchPartNumSoapIn" />
+      <wsdl:output message="tns:SearchPartNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <wsdl:input message="tns:WritePartNumSoapIn" />
+      <wsdl:output message="tns:WritePartNumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <wsdl:input message="tns:GetWorkingWrenchInfoListByStepIdSoapIn" />
+      <wsdl:output message="tns:GetWorkingWrenchInfoListByStepIdSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWrenchInfo">
+      <wsdl:input message="tns:UpdateWrenchInfoSoapIn" />
+      <wsdl:output message="tns:UpdateWrenchInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DelWrenchInfo">
+      <wsdl:input message="tns:DelWrenchInfoSoapIn" />
+      <wsdl:output message="tns:DelWrenchInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <wsdl:input message="tns:GetWorkingProcessListByDeviceCodeSoapIn" />
+      <wsdl:output message="tns:GetWorkingProcessListByDeviceCodeSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <wsdl:input message="tns:ListCodeDataSoapIn" />
+      <wsdl:output message="tns:ListCodeDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <wsdl:input message="tns:ListRepairProcessDataSoapIn" />
+      <wsdl:output message="tns:ListRepairProcessDataSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <wsdl:input message="tns:UpdateWorkingStepSoapIn" />
+      <wsdl:output message="tns:UpdateWorkingStepSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <wsdl:input message="tns:GetProcessListSoapIn" />
+      <wsdl:output message="tns:GetProcessListSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RepairServiceHttpGet">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpGetIn" />
+      <wsdl:output message="tns:HelloWorldHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <wsdl:input message="tns:AddWrenchInfoTEMPHttpGetIn" />
+      <wsdl:output message="tns:AddWrenchInfoTEMPHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <wsdl:input message="tns:AddWrenchInfoHttpGetIn" />
+      <wsdl:output message="tns:AddWrenchInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <wsdl:input message="tns:AddQianfenchiInfoHttpGetIn" />
+      <wsdl:output message="tns:AddQianfenchiInfoHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <wsdl:input message="tns:QuantityCodeHttpGetIn" />
+      <wsdl:output message="tns:QuantityCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <wsdl:input message="tns:GetWrenchInfoListDataHttpGetIn" />
+      <wsdl:output message="tns:GetWrenchInfoListDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <wsdl:input message="tns:SearchPartNumHttpGetIn" />
+      <wsdl:output message="tns:SearchPartNumHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <wsdl:input message="tns:WritePartNumHttpGetIn" />
+      <wsdl:output message="tns:WritePartNumHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <wsdl:input message="tns:GetWorkingWrenchInfoListByStepIdHttpGetIn" />
+      <wsdl:output message="tns:GetWorkingWrenchInfoListByStepIdHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <wsdl:input message="tns:GetWorkingProcessListByDeviceCodeHttpGetIn" />
+      <wsdl:output message="tns:GetWorkingProcessListByDeviceCodeHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <wsdl:input message="tns:ListCodeDataHttpGetIn" />
+      <wsdl:output message="tns:ListCodeDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <wsdl:input message="tns:ListRepairProcessDataHttpGetIn" />
+      <wsdl:output message="tns:ListRepairProcessDataHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <wsdl:input message="tns:UpdateWorkingStepHttpGetIn" />
+      <wsdl:output message="tns:UpdateWorkingStepHttpGetOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <wsdl:input message="tns:GetProcessListHttpGetIn" />
+      <wsdl:output message="tns:GetProcessListHttpGetOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:portType name="RepairServiceHttpPost">
+    <wsdl:operation name="HelloWorld">
+      <wsdl:input message="tns:HelloWorldHttpPostIn" />
+      <wsdl:output message="tns:HelloWorldHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <wsdl:input message="tns:AddWrenchInfoTEMPHttpPostIn" />
+      <wsdl:output message="tns:AddWrenchInfoTEMPHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <wsdl:input message="tns:AddWrenchInfoHttpPostIn" />
+      <wsdl:output message="tns:AddWrenchInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <wsdl:input message="tns:AddQianfenchiInfoHttpPostIn" />
+      <wsdl:output message="tns:AddQianfenchiInfoHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <wsdl:input message="tns:QuantityCodeHttpPostIn" />
+      <wsdl:output message="tns:QuantityCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <wsdl:input message="tns:GetWrenchInfoListDataHttpPostIn" />
+      <wsdl:output message="tns:GetWrenchInfoListDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <wsdl:input message="tns:SearchPartNumHttpPostIn" />
+      <wsdl:output message="tns:SearchPartNumHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <wsdl:input message="tns:WritePartNumHttpPostIn" />
+      <wsdl:output message="tns:WritePartNumHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <wsdl:input message="tns:GetWorkingWrenchInfoListByStepIdHttpPostIn" />
+      <wsdl:output message="tns:GetWorkingWrenchInfoListByStepIdHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <wsdl:input message="tns:GetWorkingProcessListByDeviceCodeHttpPostIn" />
+      <wsdl:output message="tns:GetWorkingProcessListByDeviceCodeHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <wsdl:input message="tns:ListCodeDataHttpPostIn" />
+      <wsdl:output message="tns:ListCodeDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <wsdl:input message="tns:ListRepairProcessDataHttpPostIn" />
+      <wsdl:output message="tns:ListRepairProcessDataHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <wsdl:input message="tns:UpdateWorkingStepHttpPostIn" />
+      <wsdl:output message="tns:UpdateWorkingStepHttpPostOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <wsdl:input message="tns:GetProcessListHttpPostIn" />
+      <wsdl:output message="tns:GetProcessListHttpPostOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RepairServiceSoap" type="tns:RepairServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <soap:operation soapAction="http://tempuri.org/AddWrenchInfoTEMP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <soap:operation soapAction="http://tempuri.org/AddWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <soap:operation soapAction="http://tempuri.org/AddQianfenchiInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <soap:operation soapAction="http://tempuri.org/QuantityCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <soap:operation soapAction="http://tempuri.org/GetWrenchInfoListData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <soap:operation soapAction="http://tempuri.org/SearchPartNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <soap:operation soapAction="http://tempuri.org/WritePartNum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <soap:operation soapAction="http://tempuri.org/GetWorkingWrenchInfoListByStepId" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWrenchInfo">
+      <soap:operation soapAction="http://tempuri.org/UpdateWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWrenchInfo">
+      <soap:operation soapAction="http://tempuri.org/DelWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <soap:operation soapAction="http://tempuri.org/GetWorkingProcessListByDeviceCode" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <soap:operation soapAction="http://tempuri.org/ListCodeData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <soap:operation soapAction="http://tempuri.org/ListRepairProcessData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <soap:operation soapAction="http://tempuri.org/UpdateWorkingStep" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <soap:operation soapAction="http://tempuri.org/GetProcessList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RepairServiceSoap12" type="tns:RepairServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="HelloWorld">
+      <soap12:operation soapAction="http://tempuri.org/HelloWorld" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <soap12:operation soapAction="http://tempuri.org/AddWrenchInfoTEMP" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <soap12:operation soapAction="http://tempuri.org/AddWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <soap12:operation soapAction="http://tempuri.org/AddQianfenchiInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <soap12:operation soapAction="http://tempuri.org/QuantityCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <soap12:operation soapAction="http://tempuri.org/GetWrenchInfoListData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <soap12:operation soapAction="http://tempuri.org/SearchPartNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <soap12:operation soapAction="http://tempuri.org/WritePartNum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkingWrenchInfoListByStepId" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWrenchInfo">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DelWrenchInfo">
+      <soap12:operation soapAction="http://tempuri.org/DelWrenchInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <soap12:operation soapAction="http://tempuri.org/GetWorkingProcessListByDeviceCode" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <soap12:operation soapAction="http://tempuri.org/ListCodeData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <soap12:operation soapAction="http://tempuri.org/ListRepairProcessData" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <soap12:operation soapAction="http://tempuri.org/UpdateWorkingStep" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <soap12:operation soapAction="http://tempuri.org/GetProcessList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RepairServiceHttpGet" type="tns:RepairServiceHttpGet">
+    <http:binding verb="GET" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <http:operation location="/AddWrenchInfoTEMP" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <http:operation location="/AddWrenchInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <http:operation location="/AddQianfenchiInfo" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <http:operation location="/QuantityCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <http:operation location="/GetWrenchInfoListData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <http:operation location="/SearchPartNum" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <http:operation location="/WritePartNum" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <http:operation location="/GetWorkingWrenchInfoListByStepId" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <http:operation location="/GetWorkingProcessListByDeviceCode" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <http:operation location="/ListCodeData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <http:operation location="/ListRepairProcessData" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <http:operation location="/UpdateWorkingStep" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <http:operation location="/GetProcessList" />
+      <wsdl:input>
+        <http:urlEncoded />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="RepairServiceHttpPost" type="tns:RepairServiceHttpPost">
+    <http:binding verb="POST" />
+    <wsdl:operation name="HelloWorld">
+      <http:operation location="/HelloWorld" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfoTEMP">
+      <http:operation location="/AddWrenchInfoTEMP" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddWrenchInfo">
+      <http:operation location="/AddWrenchInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="AddQianfenchiInfo">
+      <http:operation location="/AddQianfenchiInfo" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="QuantityCode">
+      <http:operation location="/QuantityCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWrenchInfoListData">
+      <http:operation location="/GetWrenchInfoListData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SearchPartNum">
+      <http:operation location="/SearchPartNum" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="WritePartNum">
+      <http:operation location="/WritePartNum" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingWrenchInfoListByStepId">
+      <http:operation location="/GetWorkingWrenchInfoListByStepId" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetWorkingProcessListByDeviceCode">
+      <http:operation location="/GetWorkingProcessListByDeviceCode" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListCodeData">
+      <http:operation location="/ListCodeData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ListRepairProcessData">
+      <http:operation location="/ListRepairProcessData" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateWorkingStep">
+      <http:operation location="/UpdateWorkingStep" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output />
+    </wsdl:operation>
+    <wsdl:operation name="GetProcessList">
+      <http:operation location="/GetProcessList" />
+      <wsdl:input>
+        <mime:content type="application/x-www-form-urlencoded" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:mimeXml part="Body" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RepairService">
+    <wsdl:port name="RepairServiceSoap" binding="tns:RepairServiceSoap">
+      <soap:address location="http://10.128.180.88:8799/RepairService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RepairServiceSoap12" binding="tns:RepairServiceSoap12">
+      <soap12:address location="http://10.128.180.88:8799/RepairService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RepairServiceHttpGet" binding="tns:RepairServiceHttpGet">
+      <http:address location="http://10.128.180.88:8799/RepairService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="RepairServiceHttpPost" binding="tns:RepairServiceHttpPost">
+      <http:address location="http://10.128.180.88:8799/RepairService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

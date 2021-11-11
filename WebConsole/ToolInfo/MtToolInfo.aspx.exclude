@@ -1,0 +1,182 @@
+﻿<%@ Page Language="C#" AutoEventWireup="true" CodeFile="MtToolInfo.aspx.cs" Inherits="ToolInfo.ToolInfo_MtToolInfo" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>工具基础信息</title>
+    <script src="/resources/js/jquery-1.12.4.min.js"></script>
+    <script src="/resources/js/ToolInfo/ToolInfo.js"></script>
+
+    <link rel='stylesheet' href="/resources/css/basic.css?4.2.2" />
+</head>
+<body>
+<ext:ResourceManager runat="server" />
+<form id="form1" runat="server">
+    <ext:FormPanel
+        runat="server"
+        Title="请输入查询条件"
+        BodyPadding="5">
+        <FieldDefaults LabelAlign="Left" MsgTarget="Side" />
+        <TopBar>
+            <ext:Toolbar runat="server">
+                <Items>
+                    <ext:TextField ID="tbSearchToolCode" runat="server" FieldLabel="编号" />
+                    <ext:TextField ID="tbSearchToolName" runat="server" FieldLabel="名称" />
+                    <ext:TextField ID="tbSearchToolSpec" runat="server" FieldLabel="规格" />
+                    <ext:SelectBox
+                        ID="cbSearchToolCate"
+                        runat="server"
+                        DisplayField="state"
+                        ValueField="abbr"
+                        FieldLabel="分类"
+                        EmptyText="请选择...">
+                        <Items>
+                        </Items>
+                    </ext:SelectBox>
+                    <ext:Button runat="server" Text="查询">
+                        <Listeners>
+                            <Click Handler="ProcQuery(); " />
+                        </Listeners>
+                    </ext:Button>
+                </Items>
+            </ext:Toolbar>
+        </TopBar>
+        <Items>
+            <ext:GridPanel
+                ID="ToolGrid"
+                runat="server"
+                Border="True">
+                <Store>
+                    <ext:Store ID="ToolGridData" OnReadData="ToolGridData_OnReadData_Refresh" PageSize="10" runat="server">
+                        <Model>
+                            <ext:Model runat="server">
+                                <Fields>
+                                    <ext:ModelField Name="srvId" />
+                                    <ext:ModelField Name="CodeNo" />
+                                    <ext:ModelField Name="Name" />
+                                    <ext:ModelField Name="Model" />
+                                    <ext:ModelField Name="Category" />
+                                    <ext:ModelField Name="BrandName" />
+                                    <ext:ModelField Name="CabinetName" />
+                                </Fields>
+                            </ext:Model>
+                        </Model>
+                        <Proxy>
+                            <ext:PageProxy />
+                        </Proxy>
+                    </ext:Store>
+                </Store>
+                <ColumnModel>
+                    <Columns>
+                        <ext:Column runat="server" Text="Id" DataIndex="srvId" Hidden="True" Hideable="False" Flex="1"></ext:Column>
+                        <ext:Column runat="server" Text="工具编码" DataIndex="CodeNo" Flex="1"></ext:Column>
+                        <ext:Column runat="server" Text="工具名称" DataIndex="Name" Flex="1"></ext:Column>
+                        <ext:Column runat="server" Text="规格" DataIndex="Model" Flex="1"></ext:Column>
+                        <ext:Column runat="server" Text="分类" DataIndex="Category" Width="120" Flex="1" />
+                        <ext:Column runat="server" Text="品牌" DataIndex="BrandName" Flex="1"></ext:Column>
+                        <ext:Column runat="server" Text="工具柜" DataIndex="CabinetName" Flex="1"></ext:Column>
+                        <ext:CommandColumn runat="server" Width="64">
+                            <Commands>
+                                <ext:GridCommand Icon="BulletEdit" CommandName="Edit">
+                                    <ToolTip Text="编辑工具" />
+                                </ext:GridCommand>
+                                <ext:CommandSeparator />
+                                <ext:GridCommand Icon="Delete" CommandName="Delete">
+                                    <ToolTip Text="删除工具" />
+                                </ext:GridCommand>
+                            </Commands>
+                            <Listeners>
+                                <Command Handler="processGrid(command, record.data.srvId);" />
+                            </Listeners>
+                        </ext:CommandColumn>
+                    </Columns>
+                </ColumnModel>
+                <SelectionModel>
+                    <ext:RowSelectionModel runat="server" />
+                </SelectionModel>
+                <BottomBar>
+                    <ext:PagingToolbar runat="server">
+                        <Items>
+                            <ext:Label runat="server" Text="每页条数:" />
+                            <ext:ToolbarSpacer runat="server" Width="10" />
+                            <ext:ComboBox runat="server" Width="80">
+                                <Items>
+                                    <ext:ListItem Text="1" />
+                                    <ext:ListItem Text="2" />
+                                    <ext:ListItem Text="10" />
+                                    <ext:ListItem Text="20" />
+                                </Items>
+                                <SelectedItems>
+                                    <ext:ListItem Value="10" />
+                                </SelectedItems>
+                                <Listeners>
+                                    <Select Handler="#{UserGrid}.store.pageSize = parseInt(this.getValue(), 10); #{UserGrid}.store.reload();" />
+                                </Listeners>
+                            </ext:ComboBox>
+                        </Items>
+                        <Plugins>
+                            <ext:ProgressBarPager runat="server" />
+                        </Plugins>
+                    </ext:PagingToolbar>
+                </BottomBar>
+                <Buttons>
+                    <ext:Button runat="server" Text="新增工具" IconCls="fa fa-user-plus" Handler="">
+                        <Listeners>
+                            <Click Handler="clearInput(); #{EditWindow}.setTitle('添加工具'); #{EditWindow}.show();" />
+                        </Listeners>
+                    </ext:Button>
+                </Buttons>
+            </ext:GridPanel>
+        </Items>
+    </ext:FormPanel>
+    
+    <ext:Window
+        ID="EditWindow"
+        runat="server"
+        Title="编辑工具"
+        Icon="Application"
+        Width="350"
+        BodyStyle="background-color: #fff;"
+        BodyPadding="5"
+        Hidden="true"
+        Modal="true">
+        <Items>
+            <ext:TextField ID="tbToolId" runat="server" Hidden="True" FieldLabel="工具Id" />
+            <ext:TextField ID="tbToolCode" runat="server" FieldLabel="工具编码" />
+            <ext:TextField ID="tbToolName" runat="server" FieldLabel="工具名称" />
+            <ext:TextField ID="tbToolSpec" runat="server" FieldLabel="规格" />
+            <ext:SelectBox
+                ID="cbToolCate"
+                runat="server"
+                DisplayField="state"
+                ValueField="abbr"
+                FieldLabel="分类"
+                EmptyText="请选择...">
+                <Items>
+                </Items>
+            </ext:SelectBox>
+            <ext:TextField ID="tbToolBrand" runat="server" FieldLabel="品牌" />
+            <ext:SelectBox
+                ID="cbCabinetName"
+                runat="server"
+                DisplayField="state"
+                ValueField="abbr"
+                FieldLabel="工具柜"
+                EmptyText="请选择...">
+                <Items>
+                </Items>
+            </ext:SelectBox>
+        </Items>
+        <Buttons>
+            <ext:Button runat="server" Text="提交">
+                <Listeners>
+                    <Click Handler="submitTool(); " />
+                </Listeners>
+            </ext:Button>
+        </Buttons>
+    </ext:Window>
+</form>
+</body>
+</html>

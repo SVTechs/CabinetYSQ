@@ -1,0 +1,1058 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:tns="http://jhy.org/" xmlns:s="http://www.w3.org/2001/XMLSchema" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tm="http://microsoft.com/wsdl/mime/textMatching/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" targetNamespace="http://jhy.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <s:schema elementFormDefault="qualified" targetNamespace="http://jhy.org/">
+      <s:element name="GetAppFileList">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppFileListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppFileListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:complexType name="ArrayOfString">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="unbounded" name="string" nillable="true" type="s:string" />
+        </s:sequence>
+      </s:complexType>
+      <s:element name="GetAppFileBase">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppFileBaseResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppFileBaseResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppBinding">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppBindingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppBindingResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SoapAuthHeader" type="tns:SoapAuthHeader" />
+      <s:complexType name="SoapAuthHeader">
+        <s:sequence>
+          <s:element minOccurs="0" maxOccurs="1" name="UserName" type="s:string" />
+          <s:element minOccurs="0" maxOccurs="1" name="Password" type="s:string" />
+        </s:sequence>
+        <s:anyAttribute />
+      </s:complexType>
+      <s:element name="CreateAppBinding">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAppBindingResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAppBindingResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBindingStatus">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="status" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateBindingStatusResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateBindingStatusResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetUserList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetUserListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetUserListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppUserInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAppUser">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userDesp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAppUserResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAppUserResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userDesp" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAppUserInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAppUserInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAppUserInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteAppUserInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppList">
+        <s:complexType />
+      </s:element>
+      <s:element name="GetAppListResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppListResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppVersionInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppVersionInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppVersionInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="GetAppInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="GetAppInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateApp">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appName" type="s:string" />
+            <s:element minOccurs="1" maxOccurs="1" name="appType" type="s:int" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CreateAppResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CreateAppResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appName" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UpdateAppInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UpdateAppInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAppInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="DeleteAppInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="DeleteAppInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateAppChecksum">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CalculateAppChecksumResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CalculateAppChecksumResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitUpdate">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="userList" type="tns:ArrayOfString" />
+            <s:element minOccurs="0" maxOccurs="1" name="changeLog" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="SubmitUpdateResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="SubmitUpdateResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFile">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appVersion" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="fileName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="encodedContent" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="UploadFileResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="UploadFileResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrepareUpload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="PrepareUploadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="PrepareUploadResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmUpload">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="appId" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="appVersion" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="ConfirmUploadResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="ConfirmUploadResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAuthInfo">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="userName" type="s:string" />
+            <s:element minOccurs="0" maxOccurs="1" name="password" type="s:string" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+      <s:element name="CheckAuthInfoResponse">
+        <s:complexType>
+          <s:sequence>
+            <s:element minOccurs="0" maxOccurs="1" name="CheckAuthInfoResult" type="tns:ArrayOfString" />
+          </s:sequence>
+        </s:complexType>
+      </s:element>
+    </s:schema>
+  </wsdl:types>
+  <wsdl:message name="GetAppFileListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppFileList" />
+  </wsdl:message>
+  <wsdl:message name="GetAppFileListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppFileListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppFileBaseSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppFileBase" />
+  </wsdl:message>
+  <wsdl:message name="GetAppFileBaseSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppFileBaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppBindingSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppBinding" />
+  </wsdl:message>
+  <wsdl:message name="GetAppBindingSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppBindingResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppBindingSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppBindingSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAppBinding" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppBindingSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAppBindingResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppBindingSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBindingStatusSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateBindingStatus" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBindingStatusSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateBindingStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateBindingStatusSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetUserList" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetUserListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetUserListSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAppUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAppUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppUserInfoSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppUserSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateAppUser" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppUserSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAppUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppUserSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAppUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAppUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppUserInfoSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppUserInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAppUserInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppUserInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAppUserInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppUserInfoSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAppListSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppList" />
+  </wsdl:message>
+  <wsdl:message name="GetAppListSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppListResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppListSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="GetAppVersionInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppVersionInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAppVersionInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppVersionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="GetAppInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:GetAppInfo" />
+  </wsdl:message>
+  <wsdl:message name="GetAppInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:GetAppInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppSoapIn">
+    <wsdl:part name="parameters" element="tns:CreateApp" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppSoapOut">
+    <wsdl:part name="parameters" element="tns:CreateAppResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateAppSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:UpdateAppInfo" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:UpdateAppInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="UpdateAppInfoSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:DeleteAppInfo" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:DeleteAppInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="DeleteAppInfoSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CalculateAppChecksumSoapIn">
+    <wsdl:part name="parameters" element="tns:CalculateAppChecksum" />
+  </wsdl:message>
+  <wsdl:message name="CalculateAppChecksumSoapOut">
+    <wsdl:part name="parameters" element="tns:CalculateAppChecksumResponse" />
+  </wsdl:message>
+  <wsdl:message name="CalculateAppChecksumSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="SubmitUpdateSoapIn">
+    <wsdl:part name="parameters" element="tns:SubmitUpdate" />
+  </wsdl:message>
+  <wsdl:message name="SubmitUpdateSoapOut">
+    <wsdl:part name="parameters" element="tns:SubmitUpdateResponse" />
+  </wsdl:message>
+  <wsdl:message name="SubmitUpdateSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapIn">
+    <wsdl:part name="parameters" element="tns:UploadFile" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapOut">
+    <wsdl:part name="parameters" element="tns:UploadFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="UploadFileSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="PrepareUploadSoapIn">
+    <wsdl:part name="parameters" element="tns:PrepareUpload" />
+  </wsdl:message>
+  <wsdl:message name="PrepareUploadSoapOut">
+    <wsdl:part name="parameters" element="tns:PrepareUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="PrepareUploadSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmUploadSoapIn">
+    <wsdl:part name="parameters" element="tns:ConfirmUpload" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmUploadSoapOut">
+    <wsdl:part name="parameters" element="tns:ConfirmUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="ConfirmUploadSoapAuthHeader">
+    <wsdl:part name="SoapAuthHeader" element="tns:SoapAuthHeader" />
+  </wsdl:message>
+  <wsdl:message name="CheckAuthInfoSoapIn">
+    <wsdl:part name="parameters" element="tns:CheckAuthInfo" />
+  </wsdl:message>
+  <wsdl:message name="CheckAuthInfoSoapOut">
+    <wsdl:part name="parameters" element="tns:CheckAuthInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="UpdateServiceSoap">
+    <wsdl:operation name="GetAppFileList">
+      <wsdl:input message="tns:GetAppFileListSoapIn" />
+      <wsdl:output message="tns:GetAppFileListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppFileBase">
+      <wsdl:input message="tns:GetAppFileBaseSoapIn" />
+      <wsdl:output message="tns:GetAppFileBaseSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppBinding">
+      <wsdl:input message="tns:GetAppBindingSoapIn" />
+      <wsdl:output message="tns:GetAppBindingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppBinding">
+      <wsdl:input message="tns:CreateAppBindingSoapIn" />
+      <wsdl:output message="tns:CreateAppBindingSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBindingStatus">
+      <wsdl:input message="tns:UpdateBindingStatusSoapIn" />
+      <wsdl:output message="tns:UpdateBindingStatusSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <wsdl:input message="tns:GetUserListSoapIn" />
+      <wsdl:output message="tns:GetUserListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUserInfo">
+      <wsdl:input message="tns:GetAppUserInfoSoapIn" />
+      <wsdl:output message="tns:GetAppUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppUser">
+      <wsdl:input message="tns:CreateAppUserSoapIn" />
+      <wsdl:output message="tns:CreateAppUserSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppUserInfo">
+      <wsdl:input message="tns:UpdateAppUserInfoSoapIn" />
+      <wsdl:output message="tns:UpdateAppUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppUserInfo">
+      <wsdl:input message="tns:DeleteAppUserInfoSoapIn" />
+      <wsdl:output message="tns:DeleteAppUserInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppList">
+      <wsdl:input message="tns:GetAppListSoapIn" />
+      <wsdl:output message="tns:GetAppListSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppVersionInfo">
+      <wsdl:input message="tns:GetAppVersionInfoSoapIn" />
+      <wsdl:output message="tns:GetAppVersionInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="GetAppInfo">
+      <wsdl:input message="tns:GetAppInfoSoapIn" />
+      <wsdl:output message="tns:GetAppInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateApp">
+      <wsdl:input message="tns:CreateAppSoapIn" />
+      <wsdl:output message="tns:CreateAppSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppInfo">
+      <wsdl:input message="tns:UpdateAppInfoSoapIn" />
+      <wsdl:output message="tns:UpdateAppInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppInfo">
+      <wsdl:input message="tns:DeleteAppInfoSoapIn" />
+      <wsdl:output message="tns:DeleteAppInfoSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CalculateAppChecksum">
+      <wsdl:input message="tns:CalculateAppChecksumSoapIn" />
+      <wsdl:output message="tns:CalculateAppChecksumSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="SubmitUpdate">
+      <wsdl:input message="tns:SubmitUpdateSoapIn" />
+      <wsdl:output message="tns:SubmitUpdateSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <wsdl:input message="tns:UploadFileSoapIn" />
+      <wsdl:output message="tns:UploadFileSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="PrepareUpload">
+      <wsdl:input message="tns:PrepareUploadSoapIn" />
+      <wsdl:output message="tns:PrepareUploadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmUpload">
+      <wsdl:input message="tns:ConfirmUploadSoapIn" />
+      <wsdl:output message="tns:ConfirmUploadSoapOut" />
+    </wsdl:operation>
+    <wsdl:operation name="CheckAuthInfo">
+      <wsdl:input message="tns:CheckAuthInfoSoapIn" />
+      <wsdl:output message="tns:CheckAuthInfoSoapOut" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="UpdateServiceSoap" type="tns:UpdateServiceSoap">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppFileList">
+      <soap:operation soapAction="http://jhy.org/GetAppFileList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppFileBase">
+      <soap:operation soapAction="http://jhy.org/GetAppFileBase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppBinding">
+      <soap:operation soapAction="http://jhy.org/GetAppBinding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAppBindingSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppBinding">
+      <soap:operation soapAction="http://jhy.org/CreateAppBinding" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CreateAppBindingSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBindingStatus">
+      <soap:operation soapAction="http://jhy.org/UpdateBindingStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateBindingStatusSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap:operation soapAction="http://jhy.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetUserListSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUserInfo">
+      <soap:operation soapAction="http://jhy.org/GetAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppUser">
+      <soap:operation soapAction="http://jhy.org/CreateAppUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CreateAppUserSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppUserInfo">
+      <soap:operation soapAction="http://jhy.org/UpdateAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppUserInfo">
+      <soap:operation soapAction="http://jhy.org/DeleteAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:DeleteAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppList">
+      <soap:operation soapAction="http://jhy.org/GetAppList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:GetAppListSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppVersionInfo">
+      <soap:operation soapAction="http://jhy.org/GetAppVersionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppInfo">
+      <soap:operation soapAction="http://jhy.org/GetAppInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApp">
+      <soap:operation soapAction="http://jhy.org/CreateApp" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CreateAppSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppInfo">
+      <soap:operation soapAction="http://jhy.org/UpdateAppInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UpdateAppInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppInfo">
+      <soap:operation soapAction="http://jhy.org/DeleteAppInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:DeleteAppInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateAppChecksum">
+      <soap:operation soapAction="http://jhy.org/CalculateAppChecksum" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:CalculateAppChecksumSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitUpdate">
+      <soap:operation soapAction="http://jhy.org/SubmitUpdate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:SubmitUpdateSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap:operation soapAction="http://jhy.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:UploadFileSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrepareUpload">
+      <soap:operation soapAction="http://jhy.org/PrepareUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:PrepareUploadSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmUpload">
+      <soap:operation soapAction="http://jhy.org/ConfirmUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+        <soap:header message="tns:ConfirmUploadSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAuthInfo">
+      <soap:operation soapAction="http://jhy.org/CheckAuthInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="UpdateServiceSoap12" type="tns:UpdateServiceSoap">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetAppFileList">
+      <soap12:operation soapAction="http://jhy.org/GetAppFileList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppFileBase">
+      <soap12:operation soapAction="http://jhy.org/GetAppFileBase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppBinding">
+      <soap12:operation soapAction="http://jhy.org/GetAppBinding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAppBindingSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppBinding">
+      <soap12:operation soapAction="http://jhy.org/CreateAppBinding" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CreateAppBindingSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateBindingStatus">
+      <soap12:operation soapAction="http://jhy.org/UpdateBindingStatus" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateBindingStatusSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUserList">
+      <soap12:operation soapAction="http://jhy.org/GetUserList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetUserListSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppUserInfo">
+      <soap12:operation soapAction="http://jhy.org/GetAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateAppUser">
+      <soap12:operation soapAction="http://jhy.org/CreateAppUser" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CreateAppUserSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppUserInfo">
+      <soap12:operation soapAction="http://jhy.org/UpdateAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppUserInfo">
+      <soap12:operation soapAction="http://jhy.org/DeleteAppUserInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:DeleteAppUserInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppList">
+      <soap12:operation soapAction="http://jhy.org/GetAppList" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:GetAppListSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppVersionInfo">
+      <soap12:operation soapAction="http://jhy.org/GetAppVersionInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetAppInfo">
+      <soap12:operation soapAction="http://jhy.org/GetAppInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateApp">
+      <soap12:operation soapAction="http://jhy.org/CreateApp" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CreateAppSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UpdateAppInfo">
+      <soap12:operation soapAction="http://jhy.org/UpdateAppInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UpdateAppInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAppInfo">
+      <soap12:operation soapAction="http://jhy.org/DeleteAppInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:DeleteAppInfoSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CalculateAppChecksum">
+      <soap12:operation soapAction="http://jhy.org/CalculateAppChecksum" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:CalculateAppChecksumSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SubmitUpdate">
+      <soap12:operation soapAction="http://jhy.org/SubmitUpdate" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:SubmitUpdateSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadFile">
+      <soap12:operation soapAction="http://jhy.org/UploadFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:UploadFileSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PrepareUpload">
+      <soap12:operation soapAction="http://jhy.org/PrepareUpload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:PrepareUploadSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConfirmUpload">
+      <soap12:operation soapAction="http://jhy.org/ConfirmUpload" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+        <soap12:header message="tns:ConfirmUploadSoapAuthHeader" part="SoapAuthHeader" use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CheckAuthInfo">
+      <soap12:operation soapAction="http://jhy.org/CheckAuthInfo" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="UpdateService">
+    <wsdl:port name="UpdateServiceSoap" binding="tns:UpdateServiceSoap">
+      <soap:address location="http://10.215.91.115:8080/UpdateService/UpdateService.asmx" />
+    </wsdl:port>
+    <wsdl:port name="UpdateServiceSoap12" binding="tns:UpdateServiceSoap12">
+      <soap12:address location="http://10.215.91.115:8080/UpdateService/UpdateService.asmx" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,226 @@
+﻿using System;
+using System.Collections;
+using System.Collections.Generic;
+using Domain.MtToolDb.Domain;
+using Domain.ServerMain.Domain;
+using Ext.Net;
+using Utilities.DbHelper;
+using WebConsole.Bll;
+
+namespace ToolInfo
+{
+    public partial class ToolInfo_MtToolInfo : System.Web.UI.Page
+    {
+        protected void Page_Load(object sender, EventArgs e)
+        {
+            if (!X.IsAjaxRequest)
+            {
+                Session["SearchToolCode"] = "";
+                Session["SearchToolName"] = "";
+                Session["SearchToolSpec"] = "";
+                Session["SearchToolCate"] = "-1";
+
+                var ulli = new ListItem
+                {
+                    Text = "不限制",
+                    Value = "-1"
+                };
+                cbSearchToolCate.Items.Add(ulli);
+                IList<MtToolCate> cateList = BllMtToolCate.SearchMtToolCate();
+                if (SqlDataHelper.IsDataValid(cateList))
+                {
+                    for (int i = 0; i < cateList.Count; i++)
+                    {
+                        var li = new ListItem
+                        {
+                            Text = cateList[i].Name,
+                            Value = cateList[i].Id.ToString()
+                        };
+                        cbSearchToolCate.Items.Add(li);
+                        cbToolCate.Items.Add(li);
+                    }
+                }
+                cbSearchToolCate.Select(0);
+
+                ulli = new ListItem
+                {
+                    Text = "无",
+                    Value = "-"
+                };
+                cbCabinetName.Items.Add(ulli);
+                IList<CabinetInfo> cabinetList = BllCabinetInfo.SearchCabinetInfo();
+                if (SqlDataHelper.IsDataValid(cabinetList))
+                {
+                    for (int i = 0; i < cabinetList.Count; i++)
+                    {
+                        var li = new ListItem
+                        {
+                            Text = cabinetList[i].CabinetAlias,
+                            Value = cabinetList[i].CabinetName
+                        };
+                        cbCabinetName.Items.Add(li);
+                    }
+                }
+            }
+        }
+
+        [DirectMethod]
+        public void SaveInput()
+        {
+            Session["SearchToolCode"] = tbSearchToolCode.Text;
+            Session["SearchToolName"] = tbSearchToolName.Text;
+            Session["SearchToolSpec"] = tbSearchToolSpec.Text;
+            Session["SearchToolCate"] = cbSearchToolCate.Value;
+        }
+
+        protected void ToolGridData_OnReadData_Refresh(object sender, StoreReadDataEventArgs e)
+        {
+            int reqCate = -1;
+            if (Session["SearchToolCate"].ToString().Length > 0)
+            {
+                reqCate = int.Parse(Session["SearchToolCate"].ToString());
+            }
+            e.Total = BllMtToolInfo.GetMtToolInfoCount((Session["SearchToolCode"] ?? "").ToString(),
+                (Session["SearchToolName"] ?? "").ToString(), (Session["SearchToolSpec"] ?? "").ToString(), reqCate);
+            IList<MtToolInfo> recordList = BllMtToolInfo.SearchMtToolInfo((Session["SearchToolCode"] ?? "").ToString(),
+                (Session["SearchToolName"] ?? "").ToString(), (Session["SearchToolSpec"] ?? "").ToString(), reqCate, e.Start, e.Limit);
+            Hashtable aliasTable = new Hashtable();
+            if (SqlDataHelper.IsDataValid(recordList))
+            {
+                List<object[]> listData = new List<object[]>();
+                for (int i = 0; i < recordList.Count; i++)
+                {
+                    string aliasName = "";
+                    if (!string.IsNullOrEmpty(recordList[i].CabinetName))
+                    {
+                        string originName = recordList[i].CabinetName;
+                        if (aliasTable[originName] == null)
+                        {
+                            aliasTable[originName] = BllCabinetInfo.GetCabinetAlias(originName);
+                        }
+                        aliasName = aliasTable[originName].ToString();
+                    }
+
+                    listData.Add(new object[] {recordList[i].Id,
+                        recordList[i].CodeNo, recordList[i].Name,
+                        recordList[i].Model, recordList[i].ToolCateInfo.Name, recordList[i].BrandName,
+                        aliasName});
+                }
+                ((Store)sender).DataSource = listData;
+            }
+        }
+
+        [DirectMethod]
+        public void OnAddToolClick()
+        {
+            if (!PermissionControl.CheckPermission(Session["UserPerm"], "949F6125-4E62-4B53-8469-E8E4D3632C92"))
+            {
+                X.Msg.Alert("提示", "权限不足").Show();
+                return;
+            }
+            if (tbToolCode.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请输入工具编号").Show();
+                return;
+            }
+            if (tbToolName.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请输入工具名称").Show();
+                return;
+            }
+            if (cbToolCate.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请选择工具分类").Show();
+                return;
+            }
+            string cabinetName = cbCabinetName.Value.ToString() == "-" ? "" : cbCabinetName.Value.ToString();
+            string toolCode = tbToolCode.Text;
+            string toolName = tbToolName.Text;
+            string toolSpec = tbToolSpec.Text;
+            int toolCate = int.Parse(cbToolCate.Value.ToString());
+            string toolBrand = tbToolBrand.Text;
+            int result = BllMtToolInfo.AddMtToolInfo(toolCode, 1, toolName, toolSpec, toolCate, toolBrand,
+                0, "", "", "", 0, 1, DateTime.Now, 0, 0, 0, cabinetName);
+            if (result < 0)
+            {
+                X.Msg.Alert("提示", "添加失败").Show();
+                return;
+            }
+            X.Msg.Alert("提示", "添加成功").Show();
+        }
+
+        [DirectMethod]
+        public void OnEdtToolClick()
+        {
+            if (!PermissionControl.CheckPermission(Session["UserPerm"], "6C66BB29-965D-447C-8241-24B3FC75E8CB"))
+            {
+                X.Msg.Alert("提示", "权限不足").Show();
+                return;
+            }
+            if (tbToolCode.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请输入工具编号").Show();
+                return;
+            }
+            if (tbToolName.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请输入工具名称").Show();
+                return;
+            }
+            if (cbToolCate.Text.Length == 0)
+            {
+                X.Msg.Alert("提示", "请选择工具分类").Show();
+                return;
+            }
+            string cabinetName = cbCabinetName.Value.ToString() == "-" ? "" : cbCabinetName.Value.ToString();
+            string toolCode = tbToolCode.Text;
+            string toolName = tbToolName.Text;
+            string toolSpec = tbToolSpec.Text;
+            int toolCate = int.Parse(cbToolCate.Value.ToString());
+            string toolBrand = tbToolBrand.Text;
+            int result = BllMtToolInfo.ModifyMtToolInfo(int.Parse(tbToolId.Text), toolCode, 1, toolName, toolSpec,
+                toolCate, toolBrand, 0, "", "", "", 0, 1, DateTime.Now, 0, 0, 0, cabinetName);
+            if (result < 0)
+            {
+                X.Msg.Alert("提示", "修改失败").Show();
+                return;
+            }
+            X.Msg.Alert("提示", "修改成功").Show();
+        }
+
+        [DirectMethod]
+        public void DeleteToolInfo(string toolId)
+        {
+            if (!PermissionControl.CheckPermission(Session["UserPerm"], "71742929-87AE-4D73-9D2F-07E674B6A102"))
+            {
+                X.Msg.Alert("提示", "权限不足").Show();
+                return;
+            }
+            int result = BllMtToolInfo.DeleteMtToolInfo(int.Parse(toolId));
+            if (result > 0)
+            {
+                X.Msg.Alert("提示", "删除成功").Show();
+            }
+            else
+            {
+                X.Msg.Alert("提示", "删除失败，请检查网络").Show();
+            }
+        }
+
+        [DirectMethod]
+        public void FillEdtInfo(string toolId)
+        {
+            MtToolInfo ti = BllMtToolInfo.GetMtToolInfo(int.Parse(toolId));
+            if (ti != null)
+            {
+                tbToolId.Text = ti.Id.ToString();
+                tbToolCode.Text = ti.CodeNo;
+                tbToolName.Text = ti.Name;
+                tbToolSpec.Text = ti.Model;
+                cbToolCate.Select((object)ti.BCategoryId);
+                tbToolBrand.Text = ti.BrandName;
+                cbCabinetName.Select(ti.CabinetName);
+            }
+        }
+    }
+}

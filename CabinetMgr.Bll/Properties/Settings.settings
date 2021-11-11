@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='utf-8'?>
+<SettingsFile xmlns="http://schemas.microsoft.com/VisualStudio/2004/01/settings" CurrentProfile="(Default)" GeneratedClassNamespace="CabinetMgr.Bll.Properties" GeneratedClassName="Settings">
+  <Profiles />
+  <Settings>
+    <Setting Name="CabinetBll_UpdateServiceRef_MainService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.215.91.115:8080/UpdateService/UpdateService.asmx</Value>
+    </Setting>
+    <Setting Name="CabinetBll_ToolBarServiceRef_ToolBarServiceManage" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.128.180.88:8991/ToolBarServiceManage.asmx</Value>
+    </Setting>
+    <Setting Name="CabinetBll_MeasureServiceRef_MeasureService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.128.180.88:8799/RepairService.asmx</Value>
+    </Setting>
+    <Setting Name="CabinetBll_SyncServiceRef_SyncService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.215.91.115:8080/CabinetService/SyncService.asmx</Value>
+    </Setting>
+    <Setting Name="CabinetMgr_Bll_ToolServiceRef_ToolService" Type="(Web Service URL)" Scope="Application">
+      <Value Profile="(Default)">http://10.215.91.115:8080/ToolService/ToolService.asmx</Value>
+    </Setting>
+  </Settings>
+</SettingsFile>

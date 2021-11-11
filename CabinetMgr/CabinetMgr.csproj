@@ -1,0 +1,685 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{25C7CD20-8BC6-4286-9EE9-37FDD6EC7B85}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>CabinetMgr</RootNamespace>
+    <AssemblyName>CabinetMgr</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>LOGO.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AXIMAGELib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AxInterop.AXIMAGELib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.RealSvrOcxTcpLib, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AxInterop.RealSvrOcxTcpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="C1.Win.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=944ae1ea0e47ca04, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1FlexGrid.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="C1.Win.C1Ribbon.4, Version=4.0.20183.338, Culture=neutral, PublicKeyToken=79882d576c6336da, processorArchitecture=MSIL" />
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.10\lib\net40-client\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormAbout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormChecksumWeb.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormChecksumWeb.Designer.cs">
+      <DependentUpon>FormChecksumWeb.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeviceDebug.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeviceDebug.Designer.cs">
+      <DependentUpon>FormDeviceDebug.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDeviceLoader.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDeviceLoader.Designer.cs">
+      <DependentUpon>FormDeviceLoader.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDrawerStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormDrawerStatus.Designer.cs">
+      <DependentUpon>FormDrawerStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputPrompt.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputPrompt.Designer.cs">
+      <DependentUpon>FormInputPrompt.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormIoRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormIoRecord.Designer.cs">
+      <DependentUpon>FormIoRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLoading.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLoading.Designer.cs">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMachineCode.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMachineCode.Designer.cs">
+      <DependentUpon>FormMachineCode.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMessageBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMessageBox.Designer.cs">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMissionInfoEx.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMissionInfoEx.Designer.cs">
+      <DependentUpon>FormMissionInfoEx.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPdUpload.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPdUpload.Designer.cs">
+      <DependentUpon>FormPdUpload.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormBorrowRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormBorrowRecord.Designer.cs">
+      <DependentUpon>FormBorrowRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolCheckComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolCheckComment.Designer.cs">
+      <DependentUpon>FormToolCheckComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormModifyTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormModifyTool.Designer.cs">
+      <DependentUpon>FormModifyTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAddTool.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormAddTool.Designer.cs">
+      <DependentUpon>FormAddTool.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCabinetStatus.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormCabinetStatus.Designer.cs">
+      <DependentUpon>FormCabinetStatus.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormEmployeeList.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormEmployeeList.Designer.cs">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFpRegister.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormFpRegister.Designer.cs">
+      <DependentUpon>FormFpRegister.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormHome.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHome.Designer.cs">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormInputComment.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormInputComment.Designer.cs">
+      <DependentUpon>FormInputComment.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormLogin.Designer.cs">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMain.Designer.cs">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormReturnRecord.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormReturnRecord.Designer.cs">
+      <DependentUpon>FormReturnRecord.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolCheck.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolCheck.Designer.cs">
+      <DependentUpon>FormToolCheck.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolManage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolManage.Designer.cs">
+      <DependentUpon>FormToolManage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolPlan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolPlan.Designer.cs">
+      <DependentUpon>FormToolPlan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolPurchase.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolPurchase.Designer.cs">
+      <DependentUpon>FormToolPurchase.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormToolReport.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormToolReport.Designer.cs">
+      <DependentUpon>FormToolReport.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <Compile Include="RtDelegate\DelegateMissionInfo.cs" />
+    <Compile Include="RtDelegate\DelegateReturnRecord.cs" />
+    <Compile Include="RtDelegate\DelegateToolCheck.cs" />
+    <Compile Include="RtDelegate\DelegateToolManage.cs" />
+    <Compile Include="RtVars\AppRt.cs" />
+    <Compile Include="RtVars\VarFormDrawerStatus.cs" />
+    <Compile Include="RtVars\VarFormInputPrompt.cs" />
+    <None Include="App.config" />
+    <None Include="res\login.jpg" />
+    <None Include="res\leftbtn-gjzt-s.png" />
+    <None Include="res\leftbtn-gjzt-n.png" />
+    <None Include="res\head.png" />
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormChecksumWeb.resx">
+      <DependentUpon>FormChecksumWeb.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeviceDebug.resx">
+      <DependentUpon>FormDeviceDebug.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDeviceLoader.resx">
+      <DependentUpon>FormDeviceLoader.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDrawerStatus.resx">
+      <DependentUpon>FormDrawerStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputPrompt.resx">
+      <DependentUpon>FormInputPrompt.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormIoRecord.resx">
+      <DependentUpon>FormIoRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLoading.resx">
+      <DependentUpon>FormLoading.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMachineCode.resx">
+      <DependentUpon>FormMachineCode.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMessageBox.resx">
+      <DependentUpon>FormMessageBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMissionInfoEx.resx">
+      <DependentUpon>FormMissionInfoEx.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPdUpload.resx">
+      <DependentUpon>FormPdUpload.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormBorrowRecord.resx">
+      <DependentUpon>FormBorrowRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolCheckComment.resx">
+      <DependentUpon>FormToolCheckComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormModifyTool.resx">
+      <DependentUpon>FormModifyTool.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAddTool.resx">
+      <DependentUpon>FormAddTool.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCabinetStatus.resx">
+      <DependentUpon>FormCabinetStatus.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormEmployeeList.resx">
+      <DependentUpon>FormEmployeeList.cs</DependentUpon>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFpRegister.resx">
+      <DependentUpon>FormFpRegister.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormHome.resx">
+      <DependentUpon>FormHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormInputComment.resx">
+      <DependentUpon>FormInputComment.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormLogin.resx">
+      <DependentUpon>FormLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMain.resx">
+      <DependentUpon>FormMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormReturnRecord.resx">
+      <DependentUpon>FormReturnRecord.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolCheck.resx">
+      <DependentUpon>FormToolCheck.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolManage.resx">
+      <DependentUpon>FormToolManage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolPlan.resx">
+      <DependentUpon>FormToolPlan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolPurchase.resx">
+      <DependentUpon>FormToolPurchase.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormToolReport.resx">
+      <DependentUpon>FormToolReport.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\licenses.licx" />
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <Content Include="Loading.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="NLog.config">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Status1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Status2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="res\Status3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="LOGO.ico" />
+    <None Include="res\leftbtn-about-s.png" />
+    <None Include="res\leftbtn-about-n.png" />
+    <None Include="res\tab-borrow-s.png" />
+    <None Include="res\tab-borrow-n.png" />
+    <None Include="res\tab-task-s.png" />
+    <None Include="res\tab-task-n.png" />
+    <None Include="res\tab-return-s.png" />
+    <None Include="res\tab-return-n.png" />
+    <None Include="res\leftbtn-tzgl-s.png" />
+    <None Include="res\leftbtn-gjsl-s.png" />
+    <None Include="res\leftbtn-gjjy-s.png" />
+    <None Include="res\leftbtn-gjbx-s.png" />
+    <None Include="res\leftbtn-tzgl.png" />
+    <None Include="res\leftbtn-gjsl.png" />
+    <None Include="res\leftbtn-gjjy.png" />
+    <None Include="res\leftbtn-gjbx.png" />
+    <None Include="res\leftbtn-lzgj-s.png" />
+    <None Include="res\leftbtn-lzgj.png" />
+    <None Include="res\leftbtn-jhjl-s.png" />
+    <None Include="res\leftbtn-jhjl.png" />
+    <None Include="res\red_s.png" />
+    <None Include="res\red_n.png" />
+    <None Include="res\green_s.png" />
+    <None Include="res\green_n.png" />
+    <None Include="res\gray_s.png" />
+    <None Include="res\gray_n.png" />
+    <None Include="res\btnconfirm.png" />
+    <None Include="res\Status4.png" />
+    <None Include="res\confirm.png" />
+    <None Include="res\comment.png" />
+    <None Include="res\tab-5-1-s.png" />
+    <None Include="res\tab-5-1-n.png" />
+    <None Include="res\tab-4-1-s.png" />
+    <None Include="res\tab-4-1-n.png" />
+    <None Include="res\tab-3-1-s.png" />
+    <None Include="res\tab-3-1-n.png" />
+    <None Include="res\tab-2-2-s.png" />
+    <None Include="res\tab-2-2-n.png" />
+    <None Include="res\tab-2-1-s.png" />
+    <None Include="res\tab-2-1-n.png" />
+    <None Include="res\aquire.png" />
+    <None Include="res\bolt.png" />
+    <None Include="Resources\yellow.png" />
+    <None Include="Resources\扳手离位.png" />
+    <None Include="Resources\尺子类离位.png" />
+    <None Include="Resources\冲击螺丝刀离位.png" />
+    <None Include="Resources\冲击钻离位.png" />
+    <None Include="Resources\锤离位.png" />
+    <None Include="Resources\磁铁离位.png" />
+    <None Include="Resources\锉离位.png" />
+    <None Include="Resources\电磨离位.png" />
+    <None Include="Resources\电钻离位.png" />
+    <None Include="Resources\丁字扳手离位.png" />
+    <None Include="Resources\断线钳离位.png" />
+    <None Include="Resources\风扳机离位.png" />
+    <None Include="Resources\管钳离位.png" />
+    <None Include="Resources\活动扳手离位.png" />
+    <None Include="Resources\棘轮扳手离位.png" />
+    <None Include="Resources\棘轮接杆离位.png" />
+    <None Include="Resources\棘轮头离位.png" />
+    <None Include="Resources\剪刀离位.png" />
+    <None Include="Resources\角磨机离位.png" />
+    <None Include="Resources\锯弓离位.png" />
+    <None Include="Resources\卷尺离位.png" />
+    <None Include="Resources\铆钉枪离位.png" />
+    <None Include="Resources\扭力扳手离位.png" />
+    <None Include="Resources\钳离位.png" />
+    <None Include="Resources\十字螺丝刀离位.png" />
+    <None Include="Resources\套筒离位.png" />
+    <None Include="Resources\套筒螺丝刀离位.png" />
+    <None Include="Resources\退针器离位.png" />
+    <None Include="Resources\万用表离位.png" />
+    <None Include="Resources\压线钳离位.png" />
+    <None Include="Resources\一字螺丝刀离位.png" />
+    <None Include="Resources\油枪离位.png" />
+    <None Include="Resources\0.png" />
+    <None Include="Resources\1.png" />
+    <None Include="Resources\2.png" />
+    <None Include="Resources\3.png" />
+    <None Include="Resources\扳手0.png" />
+    <None Include="Resources\扳手1.png" />
+    <None Include="Resources\扳手2.png" />
+    <None Include="Resources\扳手3.png" />
+    <None Include="Resources\尺子类0.png" />
+    <None Include="Resources\尺子类1.png" />
+    <None Include="Resources\尺子类2.png" />
+    <None Include="Resources\尺子类3.png" />
+    <None Include="Resources\冲击螺丝刀0.png" />
+    <None Include="Resources\冲击螺丝刀1.png" />
+    <None Include="Resources\冲击螺丝刀2.png" />
+    <None Include="Resources\冲击螺丝刀3.png" />
+    <None Include="Resources\冲击钻0.png" />
+    <None Include="Resources\冲击钻1.png" />
+    <None Include="Resources\冲击钻2.png" />
+    <None Include="Resources\冲击钻3.png" />
+    <None Include="Resources\锤0.png" />
+    <None Include="Resources\锤1.png" />
+    <None Include="Resources\锤2.png" />
+    <None Include="Resources\锤3.png" />
+    <None Include="Resources\磁铁0.png" />
+    <None Include="Resources\磁铁1.png" />
+    <None Include="Resources\磁铁2.png" />
+    <None Include="Resources\磁铁3.png" />
+    <None Include="Resources\锉0.png" />
+    <None Include="Resources\锉1.png" />
+    <None Include="Resources\锉2.png" />
+    <None Include="Resources\锉3.png" />
+    <None Include="Resources\电磨0.png" />
+    <None Include="Resources\电磨1.png" />
+    <None Include="Resources\电磨2.png" />
+    <None Include="Resources\电磨3.png" />
+    <None Include="Resources\电钻0.png" />
+    <None Include="Resources\电钻1.png" />
+    <None Include="Resources\电钻2.png" />
+    <None Include="Resources\电钻3.png" />
+    <None Include="Resources\丁字扳手0.png" />
+    <None Include="Resources\丁字扳手1.png" />
+    <None Include="Resources\丁字扳手2.png" />
+    <None Include="Resources\丁字扳手3.png" />
+    <None Include="Resources\断线钳0.png" />
+    <None Include="Resources\断线钳1.png" />
+    <None Include="Resources\断线钳2.png" />
+    <None Include="Resources\断线钳3.png" />
+    <None Include="Resources\风扳机0.png" />
+    <None Include="Resources\风扳机1.png" />
+    <None Include="Resources\风扳机2.png" />
+    <None Include="Resources\风扳机3.png" />
+    <None Include="Resources\管钳0.png" />
+    <None Include="Resources\管钳1.png" />
+    <None Include="Resources\管钳2.png" />
+    <None Include="Resources\管钳3.png" />
+    <None Include="Resources\活动扳手0.png" />
+    <None Include="Resources\活动扳手1.png" />
+    <None Include="Resources\活动扳手2.png" />
+    <None Include="Resources\活动扳手3.png" />
+    <None Include="Resources\棘轮扳手0.png" />
+    <None Include="Resources\棘轮扳手1.png" />
+    <None Include="Resources\棘轮扳手2.png" />
+    <None Include="Resources\棘轮扳手3.png" />
+    <None Include="Resources\棘轮接杆0.png" />
+    <None Include="Resources\棘轮接杆1.png" />
+    <None Include="Resources\棘轮接杆2.png" />
+    <None Include="Resources\棘轮接杆3.png" />
+    <None Include="Resources\棘轮头0.png" />
+    <None Include="Resources\棘轮头1.png" />
+    <None Include="Resources\棘轮头2.png" />
+    <None Include="Resources\棘轮头3.png" />
+    <None Include="Resources\剪刀0.png" />
+    <None Include="Resources\剪刀1.png" />
+    <None Include="Resources\剪刀2.png" />
+    <None Include="Resources\剪刀3.png" />
+    <None Include="Resources\角磨机0.png" />
+    <None Include="Resources\角磨机1.png" />
+    <None Include="Resources\角磨机2.png" />
+    <None Include="Resources\角磨机3.png" />
+    <None Include="Resources\锯弓0.png" />
+    <None Include="Resources\锯弓1.png" />
+    <None Include="Resources\锯弓2.png" />
+    <None Include="Resources\锯弓3.png" />
+    <None Include="Resources\卷尺0.png" />
+    <None Include="Resources\卷尺1.png" />
+    <None Include="Resources\卷尺2.png" />
+    <None Include="Resources\卷尺3.png" />
+    <None Include="Resources\铆钉枪0.png" />
+    <None Include="Resources\铆钉枪1.png" />
+    <None Include="Resources\铆钉枪2.png" />
+    <None Include="Resources\铆钉枪3.png" />
+    <None Include="Resources\扭力扳手0.png" />
+    <None Include="Resources\扭力扳手1.png" />
+    <None Include="Resources\扭力扳手2.png" />
+    <None Include="Resources\扭力扳手3.png" />
+    <None Include="Resources\钳0.png" />
+    <None Include="Resources\钳1.png" />
+    <None Include="Resources\钳2.png" />
+    <None Include="Resources\钳3.png" />
+    <None Include="Resources\十字螺丝刀0.png" />
+    <None Include="Resources\十字螺丝刀1.png" />
+    <None Include="Resources\十字螺丝刀2.png" />
+    <None Include="Resources\十字螺丝刀3.png" />
+    <None Include="Resources\套筒0.png" />
+    <None Include="Resources\套筒1.png" />
+    <None Include="Resources\套筒2.png" />
+    <None Include="Resources\套筒3.png" />
+    <None Include="Resources\套筒螺丝刀0.png" />
+    <None Include="Resources\套筒螺丝刀1.png" />
+    <None Include="Resources\套筒螺丝刀2.png" />
+    <None Include="Resources\套筒螺丝刀3.png" />
+    <None Include="Resources\退针器0.png" />
+    <None Include="Resources\退针器1.png" />
+    <None Include="Resources\退针器2.png" />
+    <None Include="Resources\退针器3.png" />
+    <None Include="Resources\万用表0.png" />
+    <None Include="Resources\万用表1.png" />
+    <None Include="Resources\万用表2.png" />
+    <None Include="Resources\万用表3.png" />
+    <None Include="Resources\压线钳0.png" />
+    <None Include="Resources\压线钳1.png" />
+    <None Include="Resources\压线钳2.png" />
+    <None Include="Resources\压线钳3.png" />
+    <None Include="Resources\一字螺丝刀0.png" />
+    <None Include="Resources\一字螺丝刀1.png" />
+    <None Include="Resources\一字螺丝刀2.png" />
+    <None Include="Resources\一字螺丝刀3.png" />
+    <None Include="Resources\油枪0.png" />
+    <None Include="Resources\油枪1.png" />
+    <None Include="Resources\油枪2.png" />
+    <None Include="Resources\油枪3.png" />
+    <None Include="Resources\tab-return-n.png" />
+    <None Include="Resources\tab-return-s.png" />
+    <None Include="Resources\tab-task-n.png" />
+    <None Include="Resources\tab-task-s.png" />
+    <Content Include="Resources\双头棘轮扳手0.png" />
+    <Content Include="Resources\双头棘轮扳手1.png" />
+    <Content Include="Resources\双头棘轮扳手2.png" />
+    <Content Include="Resources\双头棘轮扳手3.png" />
+    <Content Include="Resources\双头棘轮扳手离位.png" />
+    <Content Include="Resources\摇把0.png" />
+    <Content Include="Resources\摇把1.png" />
+    <Content Include="Resources\摇把2.png" />
+    <Content Include="Resources\摇把3.png" />
+    <Content Include="Resources\摇把离位.png" />
+    <Content Include="Resources\液压钳0.png" />
+    <Content Include="Resources\液压钳1.png" />
+    <Content Include="Resources\液压钳2.png" />
+    <Content Include="Resources\液压钳3.png" />
+    <Content Include="Resources\液压钳离位.png" />
+    <Content Include="res\bstatus1.png" />
+    <Content Include="res\bstatus2.png" />
+    <Content Include="res\bstatus3.png" />
+    <None Include="res\right_2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CabinetMgr.Bll\CabinetMgr.Bll.csproj">
+      <Project>{8b26a958-0cbd-421c-a800-f288c69fedc5}</Project>
+      <Name>CabinetMgr.Bll</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\CabinetMgr.Config\CabinetMgr.Config.csproj">
+      <Project>{e02d7034-db2d-43be-9f26-e93a846cb5d7}</Project>
+      <Name>CabinetMgr.Config</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj">
+      <Project>{ba0346ad-3c85-4654-b408-fe8789a2d480}</Project>
+      <Name>Domain.Main</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hardware.DeviceInterface\Hardware.DeviceInterface.csproj">
+      <Project>{BC9750B8-CE27-4570-91F4-CA1ED98392E4}</Project>
+      <Name>Hardware.DeviceInterface</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MiniBlink\MiniBlink.csproj">
+      <Project>{ff9f4c6e-b7ba-498a-9f3f-49f27ce9af1a}</Project>
+      <Name>MiniBlink</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{6d4b3b46-5aa8-40cd-90a9-c5cb1fbadf43}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

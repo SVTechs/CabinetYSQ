@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{BC9750B8-CE27-4570-91F4-CA1ED98392E4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Hardware.DeviceInterface</RootNamespace>
+    <AssemblyName>Hardware.DeviceInterface</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Debug|x86'">
+    <DebugSymbols>true</DebugSymbols>
+    <OutputPath>bin\x86\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <DebugType>full</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)' == 'Release|x86'">
+    <OutputPath>bin\x86\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <Optimize>true</Optimize>
+    <DebugType>pdbonly</DebugType>
+    <PlatformTarget>x86</PlatformTarget>
+    <ErrorReport>prompt</ErrorReport>
+    <CodeAnalysisRuleSet>MinimumRecommendedRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AxInterop.AXIMAGELib">
+      <HintPath>..\packages\AxInterop.AXIMAGELib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.RealSvrOcxTcpLib">
+      <HintPath>..\packages\AxInterop.RealSvrOcxTcpLib.dll</HintPath>
+    </Reference>
+    <Reference Include="AxInterop.zkemkeeper">
+      <HintPath>lib\AxInterop.zkemkeeper.dll</HintPath>
+    </Reference>
+    <Reference Include="AxZKFPEngXControl">
+      <HintPath>lib\AxZKFPEngXControl.dll</HintPath>
+    </Reference>
+    <Reference Include="Interop.AXIMAGELib">
+      <HintPath>..\packages\Interop.AXIMAGELib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.RealSvrOcxTcpLib">
+      <HintPath>..\packages\Interop.RealSvrOcxTcpLib.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="Interop.zkemkeeper">
+      <HintPath>lib\Interop.zkemkeeper.dll</HintPath>
+      <EmbedInteropTypes>False</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NLog, Version=4.0.0.0, Culture=neutral, PublicKeyToken=5120e14c03d0593c, processorArchitecture=MSIL">
+      <HintPath>..\packages\NLog.4.5.10\lib\net40-client\NLog.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UHFReader18CSharp">
+      <HintPath>lib\UHFReader18CSharp.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="CabinetCallback.cs" />
+    <Compile Include="CabinetDeviceRx1.cs" />
+    <Compile Include="CabinetDeviceRx3.cs" />
+    <Compile Include="CabinetDeviceRx2.cs" />
+    <Compile Include="CabinetDeviceRx4.cs" />
+    <Compile Include="CabinetDeviceRx5.cs" />
+    <Compile Include="CabinetDeviceRx6.cs" />
+    <Compile Include="CabinetDeviceRx7.cs" />
+    <Compile Include="DeviceLayer.cs" />
+    <Compile Include="FKAttendDll.cs" />
+    <Compile Include="FKCallBack.cs" />
+    <Compile Include="FKDevice.cs" />
+    <Compile Include="FKIface.cs" />
+    <Compile Include="FpCallBack.cs" />
+    <Compile Include="FpConfig.cs" />
+    <Compile Include="FpZkDevice.cs" />
+    <Compile Include="FpZkIFace.cs" />
+    <Compile Include="ICabinetDevice.cs" />
+    <Compile Include="IRDevice.cs" />
+    <Compile Include="MifareException.cs" />
+    <Compile Include="MifareReader.cs" />
+    <Compile Include="MifareReaderWarpper.cs" />
+    <Compile Include="TorqueCallback.cs" />
+    <Compile Include="MagtaDevice.cs" />
+    <Compile Include="MeasuringCallback.cs" />
+    <Compile Include="MeasuringDevice.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TorqueDevice.cs" />
+    <Compile Include="UhfCallback.cs" />
+    <Compile Include="UhfDevice.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain.Main\Domain.Main.csproj">
+      <Project>{ba0346ad-3c85-4654-b408-fe8789a2d480}</Project>
+      <Name>Domain.Main</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hardware.NCanBus\Hardware.NCanBus.csproj">
+      <Project>{c81377ac-d788-4703-9006-bdf8f274687c}</Project>
+      <Name>Hardware.NCanBus</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Hardware.NModbus4\Hardware.NModbus4.csproj">
+      <Project>{ff96b252-2b24-44a1-a09c-6401b5d7ed23}</Project>
+      <Name>Hardware.NModbus4</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Utilities\Utilities.csproj">
+      <Project>{6d4b3b46-5aa8-40cd-90a9-c5cb1fbadf43}</Project>
+      <Name>Utilities</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Basic.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="mwrf32.dll">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

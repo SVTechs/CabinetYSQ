@@ -1,0 +1,794 @@
+
+时间： 2019/06/24 13:56:33.386             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 13:58:54.032             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:02:35.404             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:04:58.998             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:08:46.360             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:09:45.780             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:10:02.765             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058270702036748             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:15:16.562             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058304695445240             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/24 14:16:55.344             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132058304695445240             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： System.NullReferenceException: 未将对象引用设置到对象的实例。
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 29异常： 
+:System.NullReferenceException 未将对象引用设置到对象的实例。 NHibernate.ISessionFactory CreateSessionFactory(DbTarget)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:23:08.977             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:24:04.641             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:24:31.214             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:24:31.214             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:25:47.006             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:27:41.220             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:27:41.265             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:27:55.952             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:31:44.827             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/06/29 20:32:36.847             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132062838428592292             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/07/05 09:53:41.382             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132067651629874826             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)             
+-----------------------------------------------------------
+
+时间： 2019/07/05 09:53:41.442             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132067651629874826             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/07/05 09:54:50.337             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132067651629874826             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
+
+时间： 2019/07/05 09:55:25.942             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132067651629874826             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.SaveData             
+进程： iisexpress             
+堆栈： SyncService.UploadData => BllSyncManager.SaveData => DalSyncManager.SaveData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.SaveData(Type tableType, DataSet infoSet, String dataOwner, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 79
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Boolean TryGetConnection(System.Data.Common.DbConnection, UInt32, Boolean, Boolean, System.Data.Common.DbConnectionOptions, System.Data.ProviderBase.DbConnectionInternal ByRef)             
+-----------------------------------------------------------
+
+时间： 2019/07/05 09:55:25.942             
+级别： Error             
+来源： CabinetService.Dal.DalSyncManager             
+设备： DESKTOP-85I656O               
+程序： 0002:/LM/W3SVC/3/ROOT-1-132067651629874826             
+版本： Could not find value for entry assembly and version type Assembly             
+路径： D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService\               
+方法： CabinetService.Dal.DalSyncManager.GetChangedData             
+进程： iisexpress             
+堆栈： SyncService.DownloadData => BllSyncManager.GetChangedData => DalSyncManager.GetChangedData             
+信息： FluentNHibernate.Cfg.FluentConfigurationException: An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ ---> System.Data.SqlClient.SqlException: 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错)
+   在 System.Data.SqlClient.SqlInternalConnectionTds..ctor(DbConnectionPoolIdentity identity, SqlConnectionString connectionOptions, SqlCredential credential, Object providerInfo, String newPassword, SecureString newSecurePassword, Boolean redirectedUserInstance, SqlConnectionString userConnectionOptions, SessionData reconnectSessionData, DbConnectionPool pool, String accessToken, Boolean applyTransientFaultHandling, SqlAuthenticationProviderManager sqlAuthProviderManager)
+   在 System.Data.SqlClient.SqlConnectionFactory.CreateConnection(DbConnectionOptions options, DbConnectionPoolKey poolKey, Object poolGroupProviderInfo, DbConnectionPool pool, DbConnection owningConnection, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionFactory.CreatePooledConnection(DbConnectionPool pool, DbConnection owningObject, DbConnectionOptions options, DbConnectionPoolKey poolKey, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionPool.CreateObject(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.UserCreateRequest(DbConnection owningObject, DbConnectionOptions userOptions, DbConnectionInternal oldConnection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, UInt32 waitForMultipleObjectsTimeout, Boolean allowCreate, Boolean onlyOneCheckConnection, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionPool.TryGetConnection(DbConnection owningObject, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionFactory.TryGetConnection(DbConnection owningConnection, TaskCompletionSource`1 retry, DbConnectionOptions userOptions, DbConnectionInternal oldConnection, DbConnectionInternal& connection)
+   在 System.Data.ProviderBase.DbConnectionInternal.TryOpenConnectionInternal(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.ProviderBase.DbConnectionClosed.TryOpenConnection(DbConnection outerConnection, DbConnectionFactory connectionFactory, TaskCompletionSource`1 retry, DbConnectionOptions userOptions)
+   在 System.Data.SqlClient.SqlConnection.TryOpenInner(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.TryOpen(TaskCompletionSource`1 retry)
+   在 System.Data.SqlClient.SqlConnection.Open()
+   在 NHibernate.Connection.DriverConnectionProvider.GetConnection()
+   在 NHibernate.Tool.hbm2ddl.SuppliedConnectionProviderConnectionHelper.Prepare()
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.GetReservedWords(Dialect dialect, IConnectionHelper connectionHelper)
+   在 NHibernate.Tool.hbm2ddl.SchemaMetadataUpdater.Update(ISessionFactory sessionFactory)
+   在 NHibernate.Impl.SessionFactoryImpl..ctor(Configuration cfg, IMapping mapping, Settings settings, EventListeners listeners)
+   在 NHibernate.Cfg.Configuration.BuildSessionFactory()
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   --- 内部异常堆栈跟踪的结尾 ---
+   在 FluentNHibernate.Cfg.FluentConfiguration.BuildSessionFactory()
+   在 CabinetService.Dal.NhUtils.NhControl.CreateSessionFactory(DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\NhUtils\NhControl.cs:行号 55
+   在 CabinetService.Dal.DalSyncManager.GetChangedData(Type tableType, DateTime lastChanged, DbTarget dbTarget) 位置 D:\Visual Studio 2015\Projects\CabinetSolutionYSQ\CabinetService.Dal\DalSyncManager.cs:行号 30
+
+异常： 
+:FluentNHibernate.Cfg.FluentConfigurationException An invalid or incomplete configuration was used while creating a SessionFactory. Check PotentialReasons collection, and InnerException for more detail.
+
+ NHibernate.ISessionFactory BuildSessionFactory()
+SqlException 在与 SQL Server 建立连接时出现与网络相关的或特定于实例的错误。未找到或无法访问服务器。请验证实例名称是否正确并且 SQL Server 已配置为允许远程连接。 (provider: SQL Network Interfaces, error: 26 - 定位指定的服务器/实例时出错) Void .ctor(System.Data.ProviderBase.DbConnectionPoolIdentity, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SqlCredential, System.Object, System.String, System.Security.SecureString, Boolean, System.Data.SqlClient.SqlConnectionString, System.Data.SqlClient.SessionData, System.Data.ProviderBase.DbConnectionPool, System.String, Boolean, System.Data.SqlClient.SqlAuthenticationProviderManager)             
+-----------------------------------------------------------
